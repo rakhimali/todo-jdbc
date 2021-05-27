@@ -1,6 +1,6 @@
-package com.apress.todo.repository;
+package com.apress.todo.jdbc.repository;
 
-import com.apress.todo.domain.ToDo;
+import com.apress.todo.jdbc.domain.ToDo;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -18,7 +18,7 @@ import java.util.Map;
 public class ToDoRepository implements CommonRepository<ToDo> {
     private static final String SQL_INSERT = "insert into todo (id, description, created, modified, completed) values " +
                                              "(:id, :description, :created, :modified, :completed)";
-    private final static String SQL_QUERY_FIND_ALL = "select * from todo";
+    private final static String SQL_QUERY_FIND_ALL = "select * from todo ";
     private final static String SQL_QUERY_FIND_BY_ID = SQL_QUERY_FIND_ALL + "where id = :id";
     private final static String SQL_UPDATE = "update todo set description = :description, modified = :modified, completed = :completed where id = :id";
     private final static String SQL_DELETE = "delete from todo where id = :id";
@@ -34,7 +34,7 @@ public class ToDoRepository implements CommonRepository<ToDo> {
         toDo.setDescription(rs.getString("description"));
         toDo.setModified(rs.getTimestamp("modified").toLocalDateTime());
         toDo.setCreated(rs.getTimestamp("created").toLocalDateTime());
-        toDo.setCompleted(rs.getBoolean("copmleted"));
+        toDo.setCompleted(rs.getBoolean("completed"));
         return toDo;
     };
 

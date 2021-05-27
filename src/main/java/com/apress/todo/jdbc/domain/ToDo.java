@@ -1,4 +1,4 @@
-package com.apress.todo.domain;
+package com.apress.todo.jdbc.domain;
 
 import lombok.Data;
 import org.hibernate.validator.constraints.NotBlank;

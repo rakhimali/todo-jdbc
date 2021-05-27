@@ -1,4 +1,4 @@
-package com.apress.todo.repository;
+package com.apress.todo.jdbc.repository;
 
 import java.util.Collection;
 

@@ -1,4 +1,4 @@
-package com.apress.todo.validation;
+package com.apress.todo.jdbc.validation;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 

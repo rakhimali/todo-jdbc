@@ -1,10 +1,10 @@
-package com.apress.todo.controller;
+package com.apress.todo.jdbc.controller;
 
-import com.apress.todo.domain.ToDo;
-import com.apress.todo.domain.ToDoBuilder;
-import com.apress.todo.repository.ToDoRepository;
-import com.apress.todo.validation.ToDoValidationError;
-import com.apress.todo.validation.ToDoValidationErrorBuilder;
+import com.apress.todo.jdbc.domain.ToDo;
+import com.apress.todo.jdbc.domain.ToDoBuilder;
+import com.apress.todo.jdbc.repository.ToDoRepository;
+import com.apress.todo.jdbc.validation.ToDoValidationError;
+import com.apress.todo.jdbc.validation.ToDoValidationErrorBuilder;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.Errors;

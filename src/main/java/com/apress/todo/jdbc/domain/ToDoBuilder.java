@@ -1,4 +1,4 @@
-package com.apress.todo.domain;
+package com.apress.todo.jdbc.domain;
 
 public class ToDoBuilder {
 

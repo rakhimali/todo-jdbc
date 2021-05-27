@@ -1,4 +1,4 @@
-package com.apress.todo.validation;
+package com.apress.todo.jdbc.validation;
 
 import org.springframework.validation.Errors;
 import org.springframework.validation.ObjectError;
