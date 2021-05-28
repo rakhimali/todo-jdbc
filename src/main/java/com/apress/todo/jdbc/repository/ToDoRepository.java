@@ -18,8 +18,8 @@ import java.util.Map;
 public class ToDoRepository implements CommonRepository<ToDo> {
     private static final String SQL_INSERT = "insert into todo (id, description, created, modified, completed) values " +
                                              "(:id, :description, :created, :modified, :completed)";
-    private final static String SQL_QUERY_FIND_ALL = "select * from todo ";
-    private final static String SQL_QUERY_FIND_BY_ID = SQL_QUERY_FIND_ALL + "where id = :id";
+    private final static String SQL_QUERY_FIND_ALL = "select * from todo";
+    private final static String SQL_QUERY_FIND_BY_ID = SQL_QUERY_FIND_ALL + " where id = :id";
     private final static String SQL_UPDATE = "update todo set description = :description, modified = :modified, completed = :completed where id = :id";
     private final static String SQL_DELETE = "delete from todo where id = :id";
     private final NamedParameterJdbcTemplate jdbcTemplate;
