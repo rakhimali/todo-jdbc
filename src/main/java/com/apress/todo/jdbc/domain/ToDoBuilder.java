@@ -12,8 +12,8 @@ public class ToDoBuilder {
         return instance;
     }
 
-    public ToDoBuilder withDescription (String descriptin) {
-        this.description = descriptin;
+    public ToDoBuilder withDescription (String description) {
+        this.description = description;
         return instance;
     }
 
